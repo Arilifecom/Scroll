@@ -1,0 +1,320 @@
+/* 
+=============== 
+common
+===============
+ */
+html{
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DDEEFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/*
+=============== 
+
+===============
+*/
+
+
+/* 
+=============== 
+header
+===============
+ */
+
+header {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("./img/mainimg.png");
+  background-position: top center;
+  object-fit: cover;
+}
+
+nav {
+  width: 100vw;
+  background-color: white;
+}
+
+.nav-center {
+  width: 90vw;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav-center .logo {
+  line-height: 1px;
+  width: 6rem;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle {
+  color: #7AB398;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  color: black;
+}
+
+.links {
+  display: block;
+}
+
+.links li {
+  padding: 1rem;
+  letter-spacing: 2px;
+}
+
+.links a {
+  color: black;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.links a:hover {
+  color: #7AB398;
+}
+
+
+.link-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+/*
+=============== 
+nuvbar
+===============
+*/
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-nav .links a{
+  color: black;
+}
+
+.fixed-nav .links a{
+  color: #7AB398;
+}
+
+/*
+=============== 
+bunnur
+===============
+*/
+.bunner {
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  text-align: center
+}
+
+.bunner h1 {
+  font-size: 2.78rem;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.container p {
+  max-width: 30rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.3rem;
+}
+
+/*
+=============== 
+section
+===============
+*/
+
+section {
+  min-height: 100vh;
+  padding-bottom: 1rem;
+}
+
+section h2 {
+  letter-spacing: 1.2px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+section span {
+  font-size: 3rem;
+  color: #ffde59;
+}
+
+#about,
+#tours {
+  background-color: white;
+}
+
+/*
+=============== 
+footer
+===============
+*/
+
+footer {
+  height: 100px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  color: #7AB398;
+}
+
+.top-link {
+  color: #ffde59;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  display: grid;
+  place-items: center;
+  animation: bounce 2s ease-in-out infinite;
+  background-color: #7AB398;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*
+=============== 
+button
+===============
+*/
+
+.white-btn {
+  font-size: 1rem;
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 7px 25px;
+  transition: all 0.3s linear;
+  letter-spacing: 0.25rem;
+}
+
+.white-btn:hover {
+  color: #7AB398;
+  background-color: white;
+}
+
+
+/*
+=============== 
+PC screen
+===============
+*/
+
+@media screen and (min-width: 800px) {
+
+  nav {
+    background-color: transparent;
+  }
+
+  .nav-center {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1170px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .links a {
+    color: white;
+  }
+
+  .links a:hover {
+    color: black;
+  }
+
+  .link-container {
+    display: block;
+    height: auto !important;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .container p {
+    max-width: 33rem;
+    margin-bottom: 1.25rem;
+  }
+}

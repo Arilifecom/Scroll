@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll</title>
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8937e0daa0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header id="home">
+    <nav id="nav">
+      <div class="nav-center">
+        <div class="nav-header">
+          <div class="logo"><img src="img/logo.png" alt="logo"></div>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- link -->
+        <div class="link-container">
+          <ul class="links">
+            <li><a href="#home" class="scroll-link">HOME</a></li>
+            <li><a href="#about" class="scroll-link">ABOUT</a></li>
+            <li><a href="#services" class="scroll-link">SERVICES</a></li>
+            <li><a href="#tours" class="scroll-link">TOURS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bunner">
+      <div class="container">
+        <h1>Scroll Project</h1>
+        <p>ヘッダーナビから各セクションへ飛ぶ時のスクロール位置をJavaScriptで決める。ちょうどいいところに止まってほしい時に便利。</p>
+        <a class="scroll-link btn white-btn" href="#tours">TOURSはこちら</a>
+      </div>
+    </div>
+  </header>
+<!-- about -->
+  <section id="about">
+    <h2><span>A</span>bout</h2>
+  </section>
+<!-- services -->
+  <section id="services">
+    <h2><span>S</span>ervices</h2>
+  </section>
+<!-- tours -->
+  <section id="tours">
+    <h2><span>T</span>ours</h2>
+  </section>
+<!-- footer -->
+<footer class="section">
+  <p>
+    copyright &copy; Scroll company 
+    <span id="date"></span>
+    .all rights reserved
+  </p>
+</footer>
+<!-- back to top button -->
+<a href="#home" class="scroll-link top-link">
+  <i class="fas fa-arrow-up"></i>
+</a>
+  <!-- JavaScrpt -->
+  <script src="app.js"></script>
+</body>
+
+</html>
